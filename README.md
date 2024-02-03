@@ -33,7 +33,7 @@ With the optimal k value identified:
 
 - A K-Means model is initialized and fitted using the original scaled data.
 - Cryptocurrencies are clustered, and a new column with predicted clusters is added to a copy of the original data.
-- A scatter plot is created using hvPlot, with "PC1" and "PC2" as axes and clusters differentiated by color.
+- A scatter plot is created using hvPlot, with "price_change_percentage_24h" and "price_change_percentage_7d" as axes and clusters differentiated by color.
 
 ## Optimizing Clusters with PCA
 
@@ -47,6 +47,6 @@ The elbow method is repeated using the PCA-reduced data to find a potentially di
 
 - A new K-Means model is initialized with the best k value from the PCA data.
 - The model is fitted, and cryptocurrencies are clustered using the PCA data.
-- A scatter plot is created using hvPlot, this time with "price_change_percentage_24h" and "price_change_percentage_7d" as axes.
+- A scatter plot is created using hvPlot, this time with "PC1" and "PC2" as axes.
 
 
